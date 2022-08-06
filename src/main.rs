@@ -54,7 +54,7 @@ fn main() -> ! {
         &mut pac.RESETS,
     );
 
-    let mut led_pin = pins.led.into_push_pull_output();
+    let mut led_pin = pins.gpio16.into_push_pull_output();
 
     loop {
         info!("on!");
